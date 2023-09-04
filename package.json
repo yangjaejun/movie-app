@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "overrides": {
+    "cosmiconfig": "8.2.0"
+  },
   "devDependencies": {
     "@types/node-fetch": "^2.6.4",
     "dotenv": "^16.3.1",
@@ -19,7 +22,6 @@
     "vercel": "^32.1.0"
   },
   "dependencies": {
-    "cosmiconfig": "^8.2.0",
     "node-fetch": "^2.7.0"
   }
 }
