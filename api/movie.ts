@@ -1,7 +1,9 @@
 import fetch from 'node-fetch';
+import { VercelRequest, VercelResponse } from '@vercel/node';
+
 const { API_KEY } = process.env;
 
-export default async function handler(request, response) {
+export default async function handler(request: VercelRequest, response: VercelResponse) {
   const { title, page, id } = JSON.parse(request.body);
   const url = id
     ? `https://omdbapi.com?apikey=${API_KEY}&i=${id}&plot=full`
